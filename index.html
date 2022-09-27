@@ -4,28 +4,28 @@
         <!--metadata?-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--man, what a great title-->
-        <title>My New Spotify Playlist</title>
-        <!--stylish, no fonts embedded-->
-        <link rel="stylesheet" href="styles.css">
-        <!--preload those images!-->
+        <title>Interactive Cat Meme</title>  <!--man, what a great title-->
+        <link rel="stylesheet" href="styles.css"> <!--stylish, but fonts embedded-->
+        <link rel="icon" href="play-icon.png">
     </head>
 
     <body>
-        <!--the header-->
-        <header>
-            <video class ="cat-container" id ="cat-container" loop>
-                <!--source hosted on the github?-->  
-                <source src="cat.mp4" type="video/mp4"> 
+        <header> <!--the header-->
+
+            <video class ="cat-container" id ="cat-container" loop>    
+                <source src="cat.mp4" type="video/mp4">  <!--source hosted on the github?-->  
             </video>
+
             <h1>
                 This cat is <br>
-                <span style="color:#3f5efb;">funked up</span> bruh
-                <!--button-->
-                <img src="play-icon.png" width= '100' id="icon" style="float:right" onclick="switcheroo()">
-            </h1><!--too lazy to margin, will do later-->
+                <span style="color:#3f5efb;">funked up</span> bruh <!-- span colors a specific word-->
+                <img src="play-icon.png" width= '100' id="icon" style="float:right" onclick="switcheroo()">  <!--button-->
+            </h1>
+
+            <h6>
+                &copy; It'z_Miles 2022 <!-- yeah, I made this-->
+            </h6>
         </header>
-        <!--the button script-->
-        <script src="app.js"></script>
+        <script src="app.js"></script> <!--the button/video script-->
     </body>
 </html>

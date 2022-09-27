@@ -37,6 +37,17 @@ h1 {
     font-family: 'gothammedium';
     padding-top: 300px;
     text-shadow: 0px 0px 12px #ffffff; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    padding-right: 50px;
+}
+
+h6 {
+  color: white;
+  font-size: 10px;
+  font-family: 'gothammedium';
+  text-shadow: 0px 0px 12px #ffffff; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 header::after {/*overlay*/
