@@ -1,23 +1,24 @@
-var icon;
+
 var cat;
-var music;
+var paused;
+var button;
 
-window.addEventListener('load',function(){
-icon = document.getElementById('icon').src;
-cat = document.querySelector('cat-container');
-music = document.querySelector('music');
-music.play();
-cat.play();
-});
 
-function switcheroo(){
-    if(document.getElementById('icon').src == "pause-icon.png"){// if the icon path is 'paused'
-        document.getElementById('icon').src = "play-icon.png";// unpause it
-        cat.play();
-        music.play();
-    }else{ // if it doesn't have it
-        icon = "play-icon.png";// add it
-        cat.pause();
-        music.pause();  
-    }
+    window.addEventListener('load',function(){
+    cat = document.getElementById('cat-container');
+    paused = true;
+    icon = document.getElementById("icon");
+    });
+
+function switcheroo() {
+
+        if (paused == true) {// if the video is 'paused' before clicking
+            document.getElementById("icon").src = "pause-icon.png";// unpause it
+            cat.play();
+            paused = false;    
+        } else {// if the icon path is 'played'
+            document.getElementById("icon").src = "play-icon.png"; //pause it
+            cat.pause();
+            paused = true;
+        }
 }
