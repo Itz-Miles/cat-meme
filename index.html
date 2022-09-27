@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--metadata?-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--man, what a great title-->
+        <title>My New Spotify Playlist</title>
+        <!--stylish, no fonts embedded-->
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+
+    <body>
+        <!--the header-->
+
+        <audio class =".music" autoplay loop> <!-- so I CANT force an (unmutable, unless paused) video down someone's throat?-->
+            <source src="shnappi.ogg" type="audio/ogg">
+            <source src="shnappi.mp3" type="audio/mpeg">
+          </audio>
+
+        <header>
+            <video class ="cat-container" autoplay loop muted>
+                <!--source hosted on the github?-->  
+                <source src="cat.mp4" type="video/mp4"> 
+            </video>
+
+            <h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                This cat is <br>
+                funked up bruh
+                <!--button-->
+                <img src="pause-icon.png" width= '100' id="icon" onclick="switcheroo()">
+            </h1><!--too lazy to margin, will do later-->
+        </header>
+       
+        <!--the button script-->
+        <script src="app.js"></script>
+    </body>
+</html>
+
